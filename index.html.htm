@@ -26,11 +26,14 @@
 <hr>
 
 <h2 
-<div style="width: 320px; height: 25px; background-color: white; border: 1px solid white; padding 5px; display: flex; flex-direction: column; justify-content: flex-end;" style ="font-size:44px; color:blue;" title="hovering over blue h2"> Jonathan's blue heading 2</h2>
+<div style="width: 385px; height: 25px; background-color: white; border: 1px solid white; padding 5px; display: flex; flex-direction: column; justify-content: flex-end;" style ="font-size:44px; color:blue;" title="hovering over blue h2"><i> Jonathan's blue heading 2 is italicized</i></h2>
 
-<p style ="font-size:24px; color:red;" title="hovering over next paragraph 2 section, text is red but the title hovering is black"> HTML images are fined with the img tag,<br>
+<p style ="font-size:24px; color:red;" title="hovering over next paragraph 2 section, text is red but the title hovering is black"><strong> HTML images are fined with the img tag,<br>
 and the filename of the image source is specified in the src attribute:
+</strong>
+</p>
 
+<p>
 <div style="width:800px; height: 135px; background-color: black; border: 1px solid black; padding: 5px; display: flex; flex-direction: column; justify-content: flex-end;">
 <pre style="font-size:25px; color:silver; margin-bottom: 5px;">
 My Bonnie lies here.
@@ -40,9 +43,32 @@ My Bonnie lies here.
 </pre>
 </div>
 </p>
-
+<style>
+	.box-container {
+		/* text-align: center; centers inline-level content (like our inline-block box) */
+		text-align: center;
+	}
+	.box {
+		display: inline-block; /*Allows the box to shirnk to its conent */
+		border: 1px solid black;
+		background-color: white; /* White background */
+		padding: 10px; /* Spacing inside the box */
+	}
+</style>
+<body>
+<div class="box-container">
+	<div class="box">
+		<p>This
+		<mark */this should highlight the word is*/>
+		is
+		</mark>
+		<sub>subscript</sub> and <sup>superscript</sup></p>
+	</div>
+</div>
+<p>
 <img src="https://www.w3schools.com/images/img_girl.jpg" alt="Girl with a jacket" width="500" height="600" style="font-family: verdana; color:white;">
-
+</p>
 </body>
+
 
 </html>

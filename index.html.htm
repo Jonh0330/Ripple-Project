@@ -24,9 +24,25 @@
 <a style="color: white;" href="https://www.w3schools.com" target="_blank">Visit W3Schools.com!</a>
 
 <hr>
+ 
+<div style="width: 350px; height: 25px; background-color: white; border: 1px solid white; padding 5px; display: flex; flex-direction: column; justify-content: flex-end;" title="hovering over blue h2">
+	<h2 style="font-size:22px; color: blue; margin: 0;"><i> Jonathan's blue heading 2 is italicized</i></h2>
+</div>
 
-<h2 
-<div style="width: 385px; height: 25px; background-color: white; border: 1px solid white; padding 5px; display: flex; flex-direction: column; justify-content: flex-end;" style ="font-size:44px; color:blue;" title="hovering over blue h2"><i> Jonathan's blue heading 2 is italicized</i></h2>
+<div style="width: 290px; height: 25px; background-color: yellow; border: 1px solid white; padding 5px; display: flex; flex-direction: column; justify-content: flex-end;" title="hovering over abbreviation">
+	<p style="font-size:22px; color: blue; margin: 0;"> The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+</div>
+
+<div style="width: 250px; height: 150px; bakground-color: blue; border: 1px solid white; padding 5px; display: flex; flex-direction: column; justify-content: flex-end;" title="hovering over address">
+	<address style="font-size:22px; color: white; margin: 0;">
+	Written by John Doe.<br>
+	Visit us at:<br>
+	Example.com<br>
+	Box 564, Disneyland<br>
+	USA
+	</address>
+</div>
 
 <p style ="font-size:24px; color:red;" title="hovering over next paragraph 2 section, text is red but the title hovering is black"><strong> HTML images are fined with the img tag,<br>
 and the filename of the image source is specified in the src attribute:
@@ -43,18 +59,7 @@ My Bonnie lies here.
 </pre>
 </div>
 </p>
-<style>
-	.box-container {
-		/* text-align: center; centers inline-level content (like our inline-block box) */
-		text-align: center;
-	}
-	.box {
-		display: inline-block; /*Allows the box to shirnk to its conent */
-		border: 1px solid black;
-		background-color: white; /* White background */
-		padding: 10px; /* Spacing inside the box */
-	}
-</style>
+<link rel="stylesheet" href="ripple1stylesheet.css">
 <body>
 <div class="box-container">
 	<div class="box">
@@ -65,11 +70,30 @@ My Bonnie lies here.
 		<sub>subscript</sub> and <sup>superscript</sup></p>
 	</div>
 </div>
+
+<div class="box-container">
+	<div class="box">
+		<!-- This next line strikes a line through the words blue element and underlines the words red element -->
+		<p style="color:#00AAFF;">This <! -- browser should not show in-line comments --> <del>blue element</del> here has been deleted, and insert <ins>red element</ins>.</p>
+	</div>
+</div>
+
 <p>
 <img src="https://www.w3schools.com/images/img_girl.jpg" alt="Girl with a jacket" width="500" height="600" style="font-family: verdana; color:white;">
 </p>
+
+<p style="color:#00FFFF;" title="Hovering over statement">Here is a quote from Ripple's website: <a style="color:white;" href="https://ripple.com/" target="_blank">Visit Ripple.Com!</a></p>
+<blockquote style="color:white;" cite="https://ripple.com/">
+Payments. Custody. Stablecoin. It’s happening with Ripple.
+From instant payments to asset tokenization, blockchain and crypto are happening right now, across the world.
+
+It’s happening to suppliers, to retailers, to exchanges, to currencies, to sectors, to industries, to markets, and to global businesses. And it’s happening with Ripple.
+</blockquote>
+
+<p style="color:rgba(255, 99, 71, 0.8);">Here is a quote from <a style="color:#DC143C;" href="https://ripple.com/" target="_blank"> Ripple.Com </a><q>Ripple’s payments, custody and stablecoin solutions empower financial institutions to integrate blockchain and digital assets into their business in a simple, secure, compliant way—all in one place.</q></p>
+<!-- Write your comments here -->
+<bdo style="color:white;"title="hovering over bi-directional override"; dir="rtl">This will be written from right to left</bdo>
 </body>
 
 
 </html>
-

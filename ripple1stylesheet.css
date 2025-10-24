@@ -1,0 +1,12 @@
+.box-container {
+	/* text-align: center; centers inline-level content (like our inline-block box) */
+	text-align: center;
+}
+
+.box {
+	display: inline-block; /* Allows the box to shrink to its content */
+	border: 5px solid black;
+	margin: 10px;
+	background-color: rgb(240, 240, 240); /* White background */
+	padding: 2px; /* Spacing inside the box */
+}

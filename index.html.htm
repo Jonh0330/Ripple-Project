@@ -3,16 +3,18 @@
 <html lang="en-US">
 
 <head>
-	<title>MY FIRST HTML PAGEl</title>
+	<title>MY RIPPLE PROJECT</title>
+	<link rel="icon" type="image/x-icon" href="C:\Users\a111810\Desktop\ME\Ripple Project\images\favicon.ico">
 	<meta charset="UTF-8">
+
 </head>
 
 <style>
 	body {
-	background-image:url('https://cdn.decrypt.co/resize/1024/height/512/wp-content/uploads/2025/06/ripple-logo-decrypt-style-01-gID_7.png'); /*Replace with your image path*/
-	background-repeat: no-repeat; /*Prevents the image from repeating */
-	background-size: cover; /*Scales the image to cover the entire element */
-	background-attachment: fixed; /*Keeps the background iamge fixed while scrolling */
+		background-image:url('https://cdn.decrypt.co/resize/1024/height/512/wp-content/uploads/2025/06/ripple-logo-decrypt-style-01-gID_7.png'); /*Replace with your image path*/
+		background-repeat: no-repeat; /*Prevents the image from repeating */
+		background-size: cover; /*Scales the image to cover the entire element */
+		background-attachment: fixed; /*Keeps the background iamge fixed while scrolling */
 	}
 </style>
 
@@ -78,8 +80,10 @@ My Bonnie lies here.
 	</div>
 </div>
 
-<p>
-<img src="https://www.w3schools.com/images/img_girl.jpg" alt="Girl with a jacket" width="500" height="600" style="font-family: verdana; color:white;">
+<p style="color:rgb(255, 255, 255);">The image is a link. You can click on it.</p>
+<a href="https://www.ripple.com" target="_blank">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8GK0T2cDSUdSFVMRRV2Z1TpbMRT5j1bknxg&s" alt="Image of X" style="width:100px; height:100px">
+</a>
 </p>
 
 <p style="color:#00FFFF;" title="Hovering over statement">Here is a quote from Ripple's website: <a style="color:white;" href="https://ripple.com/" target="_blank">Visit Ripple.Com!</a></p>
@@ -93,6 +97,108 @@ It’s happening to suppliers, to retailers, to exchanges, to currencies, to sec
 <p style="color:rgba(255, 99, 71, 0.8);">Here is a quote from <a style="color:#DC143C;" href="https://ripple.com/" target="_blank"> Ripple.Com </a><q>Ripple’s payments, custody and stablecoin solutions empower financial institutions to integrate blockchain and digital assets into their business in a simple, secure, compliant way—all in one place.</q></p>
 <!-- Write your comments here -->
 <bdo style="color:white;"title="hovering over bi-directional override"; dir="rtl">This will be written from right to left</bdo>
+
+\* Use the CSS float property to let the image float to the right or to the left of a text:*\
+<p style="color:rgb(250, 243, 220);"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnt3YMTCH0l9Lau3-MmSQq61jmuFbBlx8tDQ&s" alt="Smiley face" style="float:right;width:42px;height:42px">
+The image will float to the right of the text.</p>
+
+<p style="color:rgb(250, 243, 220);"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnt3YMTCH0l9Lau3-MmSQq61jmuFbBlx8tDQ&s" alt="Smiley face" style="float:left, width:42px;height:42px">
+The image will float to the left of the text.</p>
+
+
+<h2 style="color:rgb(242, 219, 220);">Image Maps</h2>
+
+<p style="color:rgb(255, 255, 255);"> Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:
+
+	<style>
+        /* CSS to contain the image and the coordinate display */
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* CSS for the coordinate display box */
+        #coords-display {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 5px 10px;
+            font-family: monospace;
+            font-size: 14px;
+            border-radius: 3px;
+            display: none; /* Hide by default */
+        }
+    </style>
+</p>
+
+<!-- The new image container is required to position the coordinate display -->
+<div class="image-container">
+	<img id="workplace-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq0VsSz02lnO0XkmSS68eCZOFu75jV6Bt2mg&s" alt ="Workplace" usemap="#workma" width="400" heigh="379">
+	<div id="coords-display"></div>
+</div>
+
+<map name="workmap">
+	<!-- Updated AREA tag for the phone -->
+	<area shape="rect" coords="301, 161, 373, 306" alt="Comoputer" href="https://www.britannica.com/technology/computer" target="_blank">
+	<area shape="rect" coords="100, 100, 100, 100" alt="Phone" href="https://www.nccoe.nist.gov/mobile-device-security/bring-your-own-device" target="_blank">
+	<!-- The SHAPE attribute for the cup was misspelled as circl. This is now the corrected -->
+	<area shape="circle" coords="337, 300, 44" alt="Coffee" href="#" onclick="myFunction()">
+
+</map>
+<script>
+	// Get references to the image and the coordinate display
+	const iamge= document.getElementById('workplace-image');
+	const coordsDisplay=document.getElementById('coords-display');
+
+	// Event Listener for when the mouse moves over the image
+	image.addEventListener('mousemove', (e) => {
+		// e.offsetX and e.offsetY provide the cursor's coordinates relative to the image
+		const x = e.offsetX;
+		const y = e.offsetY;
+		coordsDisplay.TextContent = 'X: ${x}, Y: ${y}';
+	});
+	
+	// Event Listener for when the mouse enters the image area
+	image.addEventListener('mouseover', () => {
+		coordsDisplay.style.display= 'block'; // Show the coordiante display
+	});
+	
+	// Event listener for when the mouse leaves the image area
+	iamge.addEventListener('mouseout, () => {
+		coordsDisplay.style.display= 'none'; // Hide the coordinate display
+	});
+
+	// Your original function for the coffee cup click
+	function myFunction() {
+		alert("You clicked the coffee cup!");
+	}
+</script>
+
+<div>
+	<div id="table1">
+		<div class="tableField">
+			<table>
+				<tr>
+					<th>Company</th>
+					<th>Contact</th>
+					<th>Country</th>
+				</tr>
+				<tr>
+					<td>Alfreds Futterkiste</td>
+					<td>Maria Anders</td>
+					<td>Germany</td>
+				</tr>
+				<tr>
+					<td>Centro Commercial Moctezuma</td>
+					<td>Francisco Chang</td>
+					<td>Medico</td>
+				</tr>
+				</table>
+		</div>
+	</div>
+</div>
 </body>
 
 

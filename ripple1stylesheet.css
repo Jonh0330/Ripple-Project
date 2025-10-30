@@ -10,3 +10,24 @@
 	background-color: rgb(240, 240, 240); /* White background */
 	padding: 2px; /* Spacing inside the box */
 }
+
+
+#table1, th, td	{
+	background: #aa78bb;
+  	padding: 1em 1em 0 1em;
+ 	border-radius: 1em;
+	border: 1px solid black;
+  	width: 100%;
+  	max-width:600px;
+  	margin: 0 0 1em 0;
+  	font-size: 1.25em;
+  	line-height: 2em;
+
+}
+
+.tableField	{
+  vertical-align: top;
+  display: inline-block;
+  margin: 0 1em 0 0;
+
+}

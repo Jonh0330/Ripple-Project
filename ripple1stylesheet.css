@@ -1,7 +1,87 @@
+/* --- 1. BASE STYLES & RESETS --- */
+/* These styles apply broadly to the entire page */
+
+body {
+	/* Background Styles */
+    background-image: url('https://cdn.decrypt.co/resize/600/height/312/wp-content/uploads/2025/06/ripple-logo-decrypt-style-01-gID_7.png'); /*Replace with your image path*/
+    background-repeat: no-repeat; /*Prevents the image from repeating */
+    background-size: cover; /*Scales the image to cover the entire element */
+    background-attachment: fixed; /*Keeps the background iamge fixed while scrolling */
+	/* Basic font and color defaults can be added here too */
+}
+
+/* --- 2. LAYOUT & CONTAINERS --- */
+/* These styles manage the overall structure and positioning */
+
+.container {
+	max-width: 960px; /* Makes the content readable on large screens */
+	margin: 0 auto; /* Centers the container horizontally on the page */
+	padding: 1px; /* Adds some space around the content */
+}
+
+
+.first-paragraph {
+	color: white;
+	text-align: left; /* Explicitly align text to the left */
+	margin-top: 50px;
+	margin-bottom: 10px;
+	/* Add padding/margin as needed */
+}
+
+/* This centers the two child containers on the page with space between them */
+.container-wrapper {
+	display: flex;				/* Activates the flexbox */
+	justify-content: space-between;	/* Pushes children to far left and far right */
+	width: 100%					/* Takes up the full width of the viewport */
+	box-sizing: border-box;			/* Ensures padding/border are included in width calcuatlion */
+}
+
+
+/* Styles for the left column */
+.second-paragraph {
+	width: 50%;					/* Takes up the left third */
+	background-color: #333;			/* Added background so the box is visible */
+	padding: 10px;				/* Added padding for aesthetics */
+	box-sizing: border-box;			/* Ensures padding is within the 33% width */
+	color: white;
+}
+
+/* Styles for the right column */
+.hyperlink {
+	/* width: 50%; */					/* Takes up the right third */
+	font-size: 300%;
+	background-color: #9075;		/* Added background so the box is visible */
+	padding: 10px;				/* Added padding for aesthetics */
+	box-sizing: border-box;			/* Ensures padding is within the 33% width */
+	color: white;
+
+	/* The box will naturally adjust its height to fit the content */
+	height: auto;
+
+	/* Use flexbox or grid to ensure veritcal adjustment works reliably and for internal alignment */
+	display: flex;
+	flex-direction: column; /* Stacks children vertically */
+
+}
+
 .box-container {
-	/* text-align: center; centers inline-level content (like our inline-block box) */
+	/* centers inline-level content (like our inline-block box) */
 	text-align: center;
 }
+
+/* --- 3. TYPOGRAPHY & TEXT ELEMENTS --- */
+/* These styles control the look of specific text elements */
+
+.project-title {
+	font-family: "Brushh Script MT", cursive; /* Added a fallback font */
+	font-size: 80px;
+	color: green;
+	text-align: center;
+	/* The 'title' attribute value stays in the html for accessibility/hover text */
+}
+
+/* --- 4. COMPONENTS & MODULES --- */
+/* These styles handle specific reusable components like boxes or cards */
 
 .box {
 	display: inline-block; /* Allows the box to shrink to its content */
@@ -11,6 +91,8 @@
 	padding: 2px; /* Spacing inside the box */
 }
 
+/* --- 5. TABLES & DATA DISPLAYS --- */
+/* These styles group specific data presentation rules */
 
 #table1, th, td	{
 	background: #aa78bb;
